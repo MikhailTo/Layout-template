@@ -1,5 +1,5 @@
 {
-	"name": "personal_blog",
+	"name": "layout-template",
 	"version": "1.0.0",
 	"main": "gulpfile.js",
 	"scripts": {
@@ -28,11 +28,12 @@
 		"panini": "^1.7.2",
 		"sass": "^1.69.5",
 		"webpack": "^5.89.0",
-		"webpack-stream": "^7.0.0"
+		"webpack-stream": "^7.0.0",
+		"gulp-strip-css-comments": "^3.0.0"
 	},
 	"overrides": {
-		"gulp-imagemin": "7.1.0",
-		"gulp-strip-css-comments": "^2.0.0"
+		"gulp-imagemin": "7.1.0"
+		
 	},
 	"browserslist": [
 		"last 1 version",
