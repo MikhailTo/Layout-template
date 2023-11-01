@@ -16,7 +16,6 @@ npm install --global gulp-cli
 ```
 
 ## For start:
-1.
 ```
 $ ncu -u --packageFile package.json
 $ npm i
@@ -29,5 +28,8 @@ Error [ERR_REQUIRE_ESM]: Must use import to load ES Module: <...> module <...>
 ```
 Solution:
 ```
-const module; import("name-of-module").then(res => { module = res; });
+const module; 
+import("name-of-module").then(res => { 
+		module = res; 
+	});
 ```
