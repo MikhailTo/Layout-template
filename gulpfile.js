@@ -15,10 +15,9 @@ const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
-
-let del; import("del").then(res => { del = res;}); //const del = require("del");
-//let imagemin; import("gulp-imagemin").then(res => { imagemin = res;}); //
 const imagemin = require("gulp-imagemin");
+let del; import("del").then(res => { del = res;}); //const del = require("del");
+
 
 /* Paths */
 const srcPath = 'src/';
