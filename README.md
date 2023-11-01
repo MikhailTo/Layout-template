@@ -1,19 +1,24 @@
 # Layout-template
 Template for layout of sites with gulp, html, sass and js
 
-1. [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+## Must be installed:
+1. [Git](https://git-scm.com/downloads)
+2. [NodeJS](https://nodejs.org/en/download)
+3. [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
 ```
 npm install -g npm-check-updates
-$ ncu
-Checking package.json
-[====================] 5/5 100%
 
- eslint             7.32.0  →    8.0.0
- prettier           ^2.7.1  →   ^3.0.0
- svelte            ^3.48.0  →  ^3.51.0
- typescript         >3.0.0  →   >4.0.0
- untildify          <4.0.0  →   ^4.0.0
- webpack               4.x  →      5.x
+```
+4. [Gulp](https://gulpjs.com/docs/en/getting-started/quick-start)
+```
+npm install --global gulp-cli
 
-Run ncu -u to upgrade package.json
+```
+
+## For start:
+1.
+```
+$ ncu -u --packageFile package.json
+$ npm i
+$ gulp
 ```
