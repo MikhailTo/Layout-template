@@ -11,12 +11,14 @@ const cssnano = require("gulp-cssnano");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const panini = require("panini");
-let del; import("del").then(res => { del = res;}); //const del = require("del");
 const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
 
+let del; import("del").then(res => { del = res;}); //const del = require("del");
+//let imagemin; import("gulp-imagemin").then(res => { imagemin = res;}); //
+const imagemin = require("gulp-imagemin");
 
 /* Paths */
 const srcPath = 'src/';
@@ -204,6 +206,7 @@ function jsWatch(cb) {
 
 function images(cb) {
 	return src(path.src.images)
+		.pipe(imagemin())
 		.pipe(dest(path.build.images))
 		.pipe(browserSync.reload({
 			stream: true

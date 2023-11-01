@@ -33,3 +33,14 @@ import("name-of-module").then(res => {
 		module = res; 
 	});
 ```
+or
+```
+//in package.json:
+
+"devDependencies": {
+	"gulp-imagemin": "^7.1.0"
+},
+
+//in gulpfile.js:
+const imagemin = require("gulp-imagemin");
+```
