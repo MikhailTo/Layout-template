@@ -1,17 +1,10 @@
 {
 	"name": "layout-template",
 	"version": "1.0.0",
-	"description": "Template for layout of sites with gulp, html, sass and js",
 	"main": "gulpfile.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/MikhailTo/layout-template.git"
-	},
-
-	
 	"author": "TMA",
 	"devDependencies": {
 		"@babel/core": "^7.23.2",
@@ -43,11 +36,5 @@
 		"last 1 version",
 		"> 1%",
 		"IE 10"
-	],
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/MikhailTo/layout-template/issues"
-	},
-	
-	"homepage": "https://github.com/MikhailTo/layout-template#readme"
+	]
 }
