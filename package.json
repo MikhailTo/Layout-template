@@ -23,7 +23,6 @@
 		"gulp-plumber": "^1.2.1",
 		"gulp-rename": "^2.0.0",
 		"gulp-sass": "^5.1.0",
-		"gulp-strip-css-comments": "^2.0.0",
 		"gulp-uglify": "^3.0.2",
 		"panini": "^1.7.2",
 		"sass": "^1.69.5",
@@ -32,7 +31,8 @@
 		"graceful-fs": "4.2.11"
 	},
 	"overrides": {
-		"gulp-imagemin": "7.1.0"
+		"gulp-imagemin": "7.1.0",
+		"gulp-strip-css-comments": "^2.0.0"
 	},
 	"browserslist": [
 		"last 1 version",
