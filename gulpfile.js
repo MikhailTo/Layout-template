@@ -1,9 +1,6 @@
 "use strict";
 
-const {
-	src,
-	dest
-} = require("gulp");
+const {src,dest} = require("gulp");
 const gulp = require("gulp");
 const autoprefixer = require("gulp-autoprefixer");
 const cssbeautify = require("gulp-cssbeautify");
@@ -14,7 +11,7 @@ const cssnano = require("gulp-cssnano");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const panini = require("panini");
-const del = require("del");
+let del; import("del").then(res => { del = res;}); //const del = require("del");
 const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
@@ -226,7 +223,7 @@ function fonts(cb) {
 }
 
 function clean(cb) {
-	return del(path.clean);
+	//return del(path.clean);
 
 	cb();
 }
