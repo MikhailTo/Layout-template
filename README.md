@@ -7,17 +7,23 @@ Template for layout of sites with gulp, html, sass and js
 3. [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
 ```
 npm install -g npm-check-updates
-
 ```
-4. [Gulp](https://gulpjs.com/docs/en/getting-started/quick-start)
-```
-npm install --global gulp-cli
-
-```
-
 ## For start:
+В директории с вашими проектами создайте bash файл под названием new_project.sh со следующим содержимым:
 ```
-$ ncu -u --packageFile package.json
-$ npm i
-$ gulp
+#!/bin/bash
+echo Дайте название проекту:
+read NAME_PROJECT
+mkdir $NAME_PROJECT
+cd $NAME_PROJECT
+git clone https://github.com/MikhailTo/layout-template.git .
+ncu -u --packageFile package.json
+npm i
+npm pkg set name="$NAME_PROJECT"
+code .
+
+```
+Где code - переменная среды Windows для запуска Visual Studio Code, равная директории: 
+```
+C:\Users\<Name_user>\AppData\Local\Programs\Microsoft VS Code\Code.exe
 ```
