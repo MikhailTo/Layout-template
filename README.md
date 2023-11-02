@@ -20,7 +20,12 @@ git clone https://github.com/MikhailTo/layout-template.git .
 ncu -u --packageFile package.json
 npm i
 npm pkg set name="$NAME_PROJECT"
+npm update
+rm /f README.md
+touch README.md
+echo $NAME_PROJECT >> README.md 
 code .
+# npm start
 
 ```
 Где code - переменная среды Windows для запуска Visual Studio Code, равная директории: 
