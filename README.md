@@ -16,7 +16,7 @@ echo Дайте название проекту:
 read NAME_PROJECT
 mkdir $NAME_PROJECT
 cd $NAME_PROJECT
-git clone https://github.com/MikhailTo/layout-template.git .
+git clone https://github.com/MikhailTo/Layout-template.git .
 ncu -u --packageFile package.json
 npm i
 npm pkg set name="$NAME_PROJECT"
